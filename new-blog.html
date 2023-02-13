@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Travel Hacks</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home </a>
+                    </li>
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#">Create Blog</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+    <form class="needs-validation" id="blogForm">
+        <div class="form-group">
+            <div class="form-row marginTop20">
+                <label for="blogTitle">Blog Title</label>
+                <input type="text" class="form-control" id="blogTitle" placeholder="Title" required />
+            </div>
+            <div class="form-row marginTop20">
+                <label for="blogDescription">Description</label>
+                <textarea class="form-control" id="blogDescription" rows="6" required></textarea>
+            </div>
+          <div class="form-row marginTop20">
+            <label for="blogImage">Image Url</label>
+            <input type="url" class="form-control" id="blogImage" placeholder="Add a picture of your travel" required />
+          </div>
+          <div class="form-row marginTop20">
+            <label for="blogBudget">Budget</label>
+            <div class="input-group">
+                
+                <div class="input-group-prepend">
+                <span class="input-group-text">Rs.</span>
+                </div>
+                <input type="number" id="blogBudget" class="form-control" placeholder="Amount (approx.)">
+            </div>
+          </div>
+          <div class="form-row marginTop20">
+            <label for="blogWriter">Writer</label>
+            <input type="text" class="form-control" id="blogWriter" placeholder="Writer" />
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit" onclick="submitForm()">Submit form</button>
+    </form>
+  </div>
+  </body>
+  <script type="text/javascript" src="./main.js"></script> 
+</html>
